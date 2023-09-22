@@ -1,9 +1,9 @@
 import React from 'react'
 
 type Params = {
-  params: {
-    name: string
-  }
+    params: {
+        name: string
+    }
 }
 
 export default function HelloName({ params: { name }}: Params) {

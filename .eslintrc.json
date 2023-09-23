@@ -1,3 +1,63 @@
 {
-  "extends": "next/core-web-vitals"
+    "extends": [
+        "next",
+        "next/core-web-vitals",
+        "eslint:recommended"
+    ],
+    "rules": {
+        "no-unused-vars": ["warn"],
+        "no-const-assign": ["error"],
+        "no-dupe-else-if": ["warn"],
+        "no-duplicate-imports": ["warn"],
+        "no-fallthrough": ["warn"],
+        "no-irregular-whitespace": [
+            "warn",
+            {
+                "skipStrings": true,
+                "skipComments": true,
+                "skipTemplates": false,
+                "skipRegExps": false,
+                "skipJSXText": false
+            }
+        ],
+        "camelcase": [
+            "warn",
+            {
+                "ignoreGlobals": true,
+                "ignoreImports": true
+            }
+        ],
+        "curly": ["warn", "all"],
+        "no-var": ["error"],
+        "array-bracket-spacing": [
+            "warn",
+            {
+                "singleValue": false,
+                "objectInArrays": false
+            }
+        ],
+        "arrow-parens": ["warn"],
+        "arrow-spacing": ["warn"],
+        "block-spacing": ["warn"],
+        "brace-style": ["warn"],
+        "comma-dangle": ["warn", "never"],
+        "comma-spacing": ["warn"],
+        "func-call-spacing": ["warn"],
+        "indent": ["warn", "tab"],
+        "key-spacing": ["warn"],
+        "jsx-quotes": ["warn", "perfer-double"],
+        "keyword-spacing": ["warn"],
+        "no-trailing-spaces": ["warn"],
+        "max-len": [
+            "warn",
+            {
+                "code": 80,
+                "ignoreUrls": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreRegExpLiterals": true,
+                "ignorePattern": "^import.*$"
+            }
+        ]
+    }
 }
